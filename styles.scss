@@ -41,9 +41,9 @@ body {
   align-items: center;
   background-image: url(/images/bg-pattern-top.svg),
     url(/images/bg-pattern-bottom.svg);
-  //   background-position-y: -200px;
-  //   background-repeat: repeat-y;
-  background-position: left top, bottom right;
+  //   background-position: left top, bottom right;
+  background-position-x: 160px, 1140px;
+  background-position-y: -250px, 700px;
   background-repeat: no-repeat;
 }
 
