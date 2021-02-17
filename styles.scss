@@ -1,4 +1,8 @@
 // Style guide variables
+// Device widths
+$mobile: 375px;
+$desktop: 1440px;
+
 // Colours
 $dark-cyan: hsl(185, 75%, 39%);
 $very-dark-desaturated-blue: hsl(229, 23%, 23%);
@@ -31,6 +35,7 @@ body {
   color: $dark-gray;
   background-color: $dark-cyan;
   letter-spacing: 1.2px;
+  overflow: hidden;
 }
 
 #background {
@@ -45,6 +50,11 @@ body {
   background-position-x: 160px, 1140px;
   background-position-y: -250px, 700px;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: $mobile) {
+    background-position-x: -775px, 180px;
+    background-position-y: -500px, 340px;
+  }
 }
 
 .flexbox-container-1 {
@@ -57,6 +67,12 @@ body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 15px 15px 15px 15px $dark-cyan;
+
+  @media screen and (max-width: $mobile) {
+    width: 320px;
+    height: 400px;
+    box-shadow: 5px 5px 5px 5px $dark-cyan;
+  }
 }
 
 .flexbox-container-2 {
@@ -68,6 +84,11 @@ body {
   width: 400px;
   height: 100px;
   background-color: white;
+
+  @media screen and (max-width: $mobile) {
+    width: 320px;
+    height: 80px;
+  }
 }
 
 .flexbox-item-1 {
